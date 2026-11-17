@@ -2,7 +2,7 @@
 name = "bcs"
 version = "0.2.1"
 description = "Binary Canonical Serialization (BCS)"
-repository = "https://github.com/zefchain/bcs"
+repository = "https://github.com/serde-tools/bcs"
 readme = "README.md"
 license = "Apache-2.0"
 edition = "2018"
