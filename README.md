@@ -1,4 +1,4 @@
-[![Build Status](https://github.com/zefchain/bcs/workflows/CI/badge.svg)](https://github.com/zefchain/bcs/actions?query=workflow%3ACI)
+[![Build Status](https://github.com/serde-tools/bcs/workflows/CI/badge.svg)](https://github.com/serde-tools/bcs/actions?query=workflow%3ACI)
 [![License](https://img.shields.io/badge/license-Apache-green.svg)](LICENSE)
 [![bcs on crates.io](https://img.shields.io/crates/v/bcs)](https://crates.io/crates/bcs)
 [![Documentation (latest release)](https://docs.rs/bcs/badge.svg)](https://docs.rs/bcs/)
