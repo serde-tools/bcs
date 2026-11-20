@@ -5,8 +5,8 @@
 
 //! # Binary Canonical Serialization (BCS)
 //!
-//! BCS (formerly "Libra Canonical Serialization" or LCS) is a serialization format developed
-//! in the context of the [Diem](https://diem.com) blockchain.
+//! BCS (formerly "Libra Canonical Serialization" or LCS) is a serialization format originally
+//! developed in the context of the Diem blockchain.
 //!
 //! BCS was designed with the following main goals in mind:
 //! * provide good performance and concise (binary) representations;
@@ -23,12 +23,12 @@
 //! As such, this implementation covers most data types supported by Serde -- including user-defined structs,
 //! tagged variants (Rust enums), tuples, and maps -- excluding floats, single unicode characters (char), and sets.
 //!
-//! BCS is also available in other programming languages, thanks to the separate project [serde-reflection](https://github.com/novifinancial/serde-reflection).
+//! BCS is also available in other programming languages, thanks to the separate project [serde-reflection](https://github.com/serde-tools/serde-reflection).
 //!
 //! ## Application to Cryptography
 //!
 //! The BCS format guarantees canonical serialization, meaning that for any given data type, there
-//! is a one-to-one correspondance between in-memory values and valid byte representations.
+//! is a one-to-one correspondence between in-memory values and valid byte representations.
 //!
 //! In the context of a cryptographic application, canonical serialization has several benefits:
 //! * It provides a natural and reliable way to associate in-memory values to cryptographic hashes.
@@ -36,12 +36,12 @@
 //!
 //! Note that BCS ensures canonical serialization for each data type separately. The data type of a serialized value
 //! must be enforced by the application itself. This requirement is typically fulfilled
-//! using unique hash seeds for each data type. (See [Diem's cryptographic library](https://github.com/diem/diem/blob/master/crypto/crypto/src/hash.rs) for an example.)
+//! using unique hash seeds for each data type.
 //!
 //! ## Backwards Compatibility
 //!
 //! By design, BCS does not provide implicit versioning or backwards/forwards compatibility, therefore
-//! applications must carefully plan in advance for adhoc extension points:
+//! applications must carefully plan in advance for ad hoc extension points:
 //! * Enums may be used for explicit versioning and backward compatibility (e.g. extensible query interfaces).
 //! * In some cases, data fields of type `Vec<u8>` may also be added to allow (future) unknown payloads
 //!   in serialized form.
@@ -191,7 +191,7 @@
 //!
 //! Tuples are considered a fixed length sequence where each element in the sequence can be a
 //! different type supported by BCS. Each element of a tuple is serialized in the order it is
-//! defined within the tuple, i.e. [tuple.0, tuple.2].
+//! defined within the tuple, i.e. [tuple.0, tuple.1].
 //!
 //! ```rust
 //! # use bcs::{Result, to_bytes};

@@ -1,5 +1,4 @@
-# Security Policies and Procedures
+# Security Policy
 
-Please see Diem's
-[security policies](https://developers.diem.com/docs/policies/security) and
-procedures for reporting vulnerabilities.
+To report a security vulnerability, please do not file a public issue. Instead, use GitHub's
+[private vulnerability reporting](https://github.com/serde-tools/bcs/security/advisories/new).

@@ -1,3 +1,6 @@
 # Code of Conduct
 
-The project has adopted a Code of Conduct that we expect project participants to adhere to. Please [read the full text](https://developers.diem.com/docs/policies/code-of-conduct) so that you can understand what actions will and will not be tolerated.
+This project follows the [Rust Code of Conduct](https://www.rust-lang.org/policies/code-of-conduct), which describes the
+expectations for interactions within the community.
+
+To report a violation, please contact the maintainers of the [`serde-tools`](https://github.com/serde-tools) organization.
